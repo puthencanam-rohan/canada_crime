@@ -1,4 +1,4 @@
-def read_crime_severity_data(params):
+def read_cyber_crime_data(params):
     import zipfile
     import os
     import os.path
