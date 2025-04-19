@@ -4,3 +4,4 @@ data/*
 functions/__pycache__/*
 *.zip
 .ipynb_checkpoints/*
+.virtual_documents/*
