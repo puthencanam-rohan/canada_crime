@@ -3,3 +3,4 @@ data/*
 *.pyc
 functions/__pycache__/*
 *.zip
+.ipynb_checkpoints/*
