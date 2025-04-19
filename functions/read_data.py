@@ -49,7 +49,7 @@ def prepare_incidents_data(params_ivd):
     display(df_ivd.head(10))
     pdf_ivd = param_df_ivd[param_df_ivd.Statistics.isin(param_val_ivd)]
     for a_key in param_clean_ivd.keys():
-        pdf_ivd = param_df_ivd[param_df_ivd.Statistics.isin(param_val_ivd)].copy()
+        pdf_ivd[a_key] = pdf_ivd[a_key].apply(param_clean_ivd.get(a_key))
 
 
     pdf_ivd = (pdf_ivd
