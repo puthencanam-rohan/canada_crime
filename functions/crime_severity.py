@@ -74,11 +74,12 @@ def prepare_incidents_data(params_ivd):
     param_df_ivd = params_ivd.get('dataframe',None)
     param_val_ivd = params_ivd.get('statistics_values_of_interest',['Actual incidents'])
     param_select_ivd = params_ivd.get('columns_of_interest',[
-    'REF_DATE',
-    'GEO',
-    'Statistics',
-    'VALUE'
-])
+                                                        'REF_DATE',
+                                                        'GEO',
+                                                        'Statistics',
+                                                        'VALUE'
+                                                        ]
+    )
 
     param_clean_ivd = params_ivd.get('clean_function_dict',{'Statistics':
                                                             lambda x: x.replace(' ', '_').lower()
